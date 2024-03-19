@@ -1,0 +1,641 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Madimi One", sans-serif;
+
+  font-style: normal;
+  /* feecdf
+  e39685 */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.pinned {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section {
+  background-color: white;
+}
+
+/* #nav div {
+  padding: 10px 20px;
+} */
+
+#logo {
+  width: auto;
+  height: auto;
+}
+
+#logo img {
+  height: 80px;
+  padding: 0px 30px;
+}
+
+#menu {
+  height: 100%;
+  overflow: hidden;
+}
+
+#list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2px;
+}
+
+#list li {
+  height: 100%;
+  padding: 0px 30px;
+  display: flex;
+  font-weight: bold;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#list li a {
+  text-decoration: none;
+  color: #4c353d;
+}
+
+#list li:hover {
+  background-color: #2a535133;
+  color: #2a5351;
+}
+
+#contact {
+  background-color: green;
+}
+
+#list #contact a {
+  text-decoration: none;
+  color: #fefefa;
+}
+
+#list li:active {
+  background-color: transparent;
+  color: black;
+}
+
+.background_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+}
+
+#home {
+  background-image: url("Product images/hero.jpg");
+}
+
+/* #about {
+  background-image: url("Product images/center_woman.jpg");
+} */
+
+#about::before {
+  background-image: url("Product images/paint.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  filter: brightness(0.5);
+  content: "";
+}
+
+#about {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text img {
+  margin-right: 50px;
+}
+
+#home .normal {
+  text-shadow: 1px 1px 5px white;
+  font-size: 18px;
+}
+
+#center_lady {
+  text-align: center;
+}
+
+#delivery i {
+  color: green;
+  font-size: 32px;
+  margin: 0px 20px;
+}
+
+#delivery div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+#home .text .welcome {
+  font-size: 40px;
+}
+
+#home #special {
+  color: #feecdf;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 5px black;
+}
+
+#home img {
+  height: 450px;
+  filter: drop-shadow(-1px 1px 2px black);
+}
+
+.heading {
+  color: #4c353d;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+#delivery,
+#prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #e6fcdf;
+  margin-bottom: 20px;
+}
+
+#aboutus,
+#Products,
+#delivery,
+#prices {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#prices {
+  background-color: white;
+}
+
+#about_text {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  place-items: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  filter: drop-shadow(0px 0px 1px #fff);
+  overflow: hidden;
+}
+
+.left {
+  text-align: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.right {
+  text-align: right;
+  width: 50%;
+  padding: 10px;
+}
+
+.products {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+#icons {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  bottom: 20px;
+}
+
+#icons div {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons button {
+  font-size: 26px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+#icons #tiktok {
+  background-color: black;
+}
+
+#icons #whatsapp {
+  background-color: #12af0a;
+}
+
+#icons #instagram {
+  background-color: #d7147d;
+}
+
+#icons #email {
+  background-color: #62a7ff;
+}
+
+#icons i {
+  color: white;
+}
+
+footer {
+  color: #4c353d;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer div {
+  text-align: center;
+  padding: 0px 0px 50px 0px;
+}
+
+#planners {
+  height: 25vh;
+  display: flex;
+
+  gap: 20px;
+  padding: 20px 0px;
+  background-color: #feecdf;
+}
+
+#planners img {
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-649px * 4));
+  }
+}
+
+@keyframes phone_scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 2));
+  }
+}
+
+.handlebooks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#journals {
+  display: flex;
+  height: 75vh;
+}
+
+#journals div {
+  display: flex;
+}
+
+.books {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+
+.books img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    height: 80vh;
+  }
+
+  #about_text {
+    height: 100vh;
+  }
+  .text {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #home .text .welcome {
+    font-size: 2.5rem;
+  }
+
+  #home .normal {
+    text-shadow: 1px 1px 5px white;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+  }
+
+  #home img {
+    height: 35rem;
+    filter: drop-shadow(-1px 1px 2px black);
+  }
+
+  #planners {
+    overflow-x: hidden;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  #aboutus,
+  #Products,
+  #delivery,
+  #prices {
+    padding: 20px 0px;
+  }
+
+  section div,
+  section p {
+    font-size: 1.2rem;
+  }
+
+  footer div {
+    width: 90%;
+  }
+
+  #icons {
+    bottom: 40px;
+  }
+
+  #journals {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #journals img {
+    width: 100%;
+  }
+
+  .handlebooks {
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  #journals .handlebooks .books img {
+    width: 40%;
+  }
+
+  #journals .handlebooks .books img {
+    animation-name: phone_scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #about_text {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+
+  .left {
+    text-align: center;
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .right {
+    text-align: center;
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  #nav {
+    height: auto;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #menu {
+    height: auto;
+  }
+
+  #list {
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #home {
+    height: 80vh;
+  }
+
+  #delivery div {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #home .text .welcome {
+    font-size: 30px;
+  }
+
+  #home .normal {
+    text-shadow: 1px 1px 5px white;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+  }
+
+  #home img {
+    height: 300px;
+    filter: drop-shadow(-1px 1px 2px black);
+  }
+
+  #planners {
+    overflow-x: hidden;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  #aboutus,
+  #Products,
+  #delivery,
+  #prices {
+    padding: 20px 0px;
+  }
+
+  #delivery div {
+    flex-direction: column;
+  }
+
+  footer div {
+    width: 90%;
+  }
+
+  #icons {
+    bottom: 40px;
+  }
+  #icons button {
+    font-size: 20px;
+  }
+
+  #icons div {
+    height: 40px;
+    width: 40px;
+  }
+
+  #journals {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #journals img {
+    width: 100%;
+  }
+
+  .handlebooks {
+    overflow: scroll;
+    height: auto;
+  }
+
+  #journals .handlebooks .books img {
+    width: 40%;
+  }
+
+  #journals .handlebooks .books img {
+    animation-name: phone_scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  #about {
+    height: 80vh;
+  }
+
+  #about_text {
+    grid-template-columns: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .left {
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .right {
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #nav {
+    height: auto;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #menu {
+    height: auto;
+  }
+
+  #list {
+    height: 80px;
+    font-size: 12px;
+  }
+}
